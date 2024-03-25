@@ -1,8 +1,9 @@
+import HomeHeader from "./HomeHeader";
 
 const Home = () => {
     return (
         <div className="mt-12">
-            <h2>this is home</h2>
+            <HomeHeader></HomeHeader>
         </div>
     );
 };
