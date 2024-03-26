@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { FaRegStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Books = ({ book }) => {
-    const { image, tags, bookName, author, category, rating } = book;
-    console.log(book);
+    const {bookId, image, tags, bookName, author, category, rating } = book;
     return (
-        <div>
+        <Link to={`/book_details/${bookId}`} className='transition hover:scale-105'>
             <div className="card bg-base-100 shadow-xl">
                 <div className='p-6'>
                     <figure className="bg-[#F3F3F3] rounded-2xl p-10 ">
@@ -15,8 +15,8 @@ const Books = ({ book }) => {
                 <div className="card-body">
                     <div>
                         {
-                            tags.map((tag, idx)=> <span 
-                            key={idx} className='mr-2 rounded-lg text-[#23BE0A] bg-[#F3F3F3]'> {tag}</span>)
+                            tags.map((tag, idx) => <span
+                                key={idx} className='mr-2 rounded-lg text-[#23BE0A] bg-[#F3F3F3]'> {tag}</span>)
                         }
                     </div>
                     <h2 className="card-title">{bookName}</h2>
@@ -30,7 +30,7 @@ const Books = ({ book }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
