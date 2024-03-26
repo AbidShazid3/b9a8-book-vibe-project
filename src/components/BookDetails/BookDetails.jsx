@@ -8,6 +8,7 @@ const BookDetails = () => {
     const { bookId } = useParams();
     const idInt = parseInt(bookId);
     const book = books.find(book => book.bookId == idInt);
+    
     const { image, tags, bookName, author, category, rating, review, publisher, yearOfPublishing, totalPages } = book;
 
     const handleRead =()=>{
