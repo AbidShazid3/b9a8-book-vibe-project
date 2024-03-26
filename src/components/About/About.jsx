@@ -11,7 +11,7 @@ const About = () => {
                 <h1 className="text-2xl font-bold">Our Mission</h1>
                 <p className="mt-2">To inspire, support, and empower aspiring researchers. To make research accessible to all, regardless of age, gender, race, and financial background.</p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 p-2">
                 <h1 className="text-2xl font-bold">About Research To Empower (ReTE)</h1>
                 <p className="mt-2">With prevalent misinformation, the rise of social media, and artificial intelligence writing for us, we live in an era where learning research techniques and processes is needed more than ever to differentiate between true and false statements. Research also leads to new knowledge, creativity, and innovation. Most importantly, it empowers young people to pursue their interests, solve crucial problems, and master a set of essential, irreplaceable skills like critical reasoning, in-depth thinking, and communication.</p>
                 <p className="mt-5">Unsurprisingly, there is a huge demand for students to learn how to research. However, there is a lack of support, courses, and information with engaging and illuminating content that appropriately introduces research to young students.</p>

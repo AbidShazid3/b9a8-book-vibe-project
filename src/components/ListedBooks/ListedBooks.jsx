@@ -44,7 +44,7 @@ const ListedBooks = () => {
                     <li onClick={()=> handleDisplayReadFilter('yearOfPublishing')}><a>Publisher year</a></li>
                 </ul>
             </div>
-            <div role="tablist" className="tabs tabs-lifted flex">
+            <div role="tablist" className="tabs tabs-lifted flex mt-4">
                 <a role="tab" className="tab">Read Books</a>
                 <a role="tab" className="tab tab-active">Wishlist Books</a>
             </div>

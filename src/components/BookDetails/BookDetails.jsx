@@ -22,16 +22,16 @@ const BookDetails = () => {
 
     return (
         <div className="mt-12">
-            <div className="flex rounded-lg p-4 gap-10">
-                <div className="bg-base-200 rounded-2xl">
-                    <img src={image} className="max-w-full shadow-2xl" />
+            <div className="md:flex lg:flex rounded-lg p-4 gap-10">
+                <div className=" flex bg-base-200 rounded-2xl items-center p-6">
+                    <img src={image} className="max-w-full shadow-2xl rounded-2xl" />
                 </div>
                 <div>
                     <h1 className="text-5xl font-bold">{bookName}</h1>
                     <h3 className="text-xl py-4 border-b-2">By: {author}</h3>
                     <p className="py-3 border-b-2">{category}</p>
                     <p className="py-3"><span className="font-bold">Review :</span> {review}</p>
-                    <div className="flex gap-8 py-4 border-b-2">
+                    <div className="md:flex lg:flex gap-8 py-4 border-b-2">
                         <p className="font-bold">Tags</p>
                         {
                             tags.map((tag, idx) => <span

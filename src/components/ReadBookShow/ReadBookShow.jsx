@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 const ReadBookShow = ({ readBookShow }) => {
     const {bookId, image, tags, bookName, author, category, rating, publisher, yearOfPublishing, totalPages } = readBookShow;
     return (
-        <div className="mt-12">
-            <div className="card card-side bg-base-100 shadow-xl">
+        <div className="mt-4">
+            <div className="md:flex lg:flex bg-base-100 shadow-xl">
                 <div className='p-6'>
                     <figure><img src={image} alt="" className='rounded-xl md:h-48 md:w-40 bg-[#F3F3F3]' /></figure>
                 </div>
                 <div className="card-body">
                     <h2 className="text-2xl font-bold">{bookName}</h2>
                     <p>By : {author}</p>
-                    <div className="flex gap-4 py-2">
+                    <div className="md:flex lg:flex gap-4 py-2">
                         <div>
                             <p className="font-bold">Tags</p>
                         </div>
