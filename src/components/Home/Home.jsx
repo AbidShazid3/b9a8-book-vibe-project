@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
-import HomeHeader from "./HomeHeader";
 import Books from "../Books/Books";
+import HomeHeader from "../HomeHeader/HomeHeader";
 
 const Home = () => {
     const books = useLoaderData();
